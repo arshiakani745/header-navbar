@@ -1,0 +1,142 @@
+/* ریست اولیه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f8fd;
+}
+
+/* تصاویر */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* لینک‌ها */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* کانتینر اصلی */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* منوی فعال */
+.active {
+  background-image: linear-gradient(71deg, #3ac2ff 50%, #2f56ff);
+  color: #fff;
+  padding: 12px;
+  border-radius: 22px;
+  font-weight: bold;
+}
+
+/* سکشن نوار بالا (ناوبری) */
+.section_nav {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* بخش چپ (لوگو) */
+.left_nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.section_logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box_img_logo {
+  min-width: 50px;
+  max-width: 50px;
+}
+
+/* بخش وسط (لینک‌های منو) */
+.center_nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.center_nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+
+/* بخش راست (آیکون‌ها و پروفایل) */
+.right_nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+
+/* آیکون‌ها */
+.group_icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.group_icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group_icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+/* بخش کاربر */
+.user_section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status_coection {
+  background-color: #edfdfa;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #1f927f;
+  white-space: nowrap;
+}
+
+.profile_user {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.profile_user > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
