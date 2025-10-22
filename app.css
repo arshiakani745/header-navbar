@@ -140,3 +140,70 @@ a {
   border-radius: 100%;
   object-fit: cover;
 }
+/* ========================= */
+/* 📱 ریسپانسیو برای تبلت و موبایل */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .section_nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .center_nav {
+    order: 3;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .center_nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .right_nav {
+    order: 2;
+    margin-top: 0.5rem;
+  }
+
+  .left_nav {
+    order: 1;
+  }
+
+  .group_icon {
+    gap: 1rem;
+  }
+
+  .status_coection {
+    font-size: 0.8rem;
+  }
+}
+
+/* حالت موبایل خیلی کوچک */
+@media (max-width: 600px) {
+  .section_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center_nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .right_nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .status_coection {
+    display: none; /* می‌تونی حذفش کنی که فضا باز بشه */
+  }
+
+  .profile_user {
+    width: 40px;
+    height: 40px;
+  }
+}
